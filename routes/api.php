@@ -21,5 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/articulos', [ArticuloController::class,"index"]);//mostrar registros
 Route::post('/articulos/create', [ArticuloController::class,"store"]);//registrar registros
-Route::put('/articulos/update/{id}', [ArticuloController::class,"update"]);//actualizar registros
-Route::delete('/articulos/delete/{id}', [ArticuloController::class,"destroy"]);//eliminar registros
+Route::post('/articulos/update', [ArticuloController::class,"update"]);//actualizar registros
+Route::post('/articulos/delete', [ArticuloController::class,"destroy"]);//eliminar registros
