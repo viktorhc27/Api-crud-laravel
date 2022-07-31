@@ -14,7 +14,7 @@ class ArticuloController extends Controller
      */
     public function index()
     {
-        $articulos = Articulo::all()->where('stock', '!=', 0);
+        $articulos = Articulo::all();
         return $articulos;
     }
 
